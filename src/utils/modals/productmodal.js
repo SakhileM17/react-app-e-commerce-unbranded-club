@@ -3,6 +3,8 @@ import "../../styles/modals.css";
 
 import { moneyFormat } from "../moneyformatter";
 
+import UnbrandedClubLogoBlack from '../../assets/unbrandedClubLogoBlack.png'
+
 const CustomProductModal = ({ product, onClose, onSubmit }) => {
     
     const [selectedSize, setSelectedSize] = useState(""); // State to manage selected size
@@ -48,7 +50,7 @@ const CustomProductModal = ({ product, onClose, onSubmit }) => {
                     </div>
 
                     <div className="unbranded-club-Logo-container">
-                        <h1>Logo</h1>
+                        <img src={UnbrandedClubLogoBlack} alt="unbranded-club-logo black"/>
                     </div>
 
                 </div>
@@ -62,35 +64,19 @@ const CustomProductModal = ({ product, onClose, onSubmit }) => {
                     <div className="product-description-container">
                         
                         <div className="product-name-container">
-                            <h2>{product.name}</h2>
+                            <h2>Unbranded Club - {product.name}</h2>
                         </div>
-                        
+
                         <div className="product-price-container">
-                            <p>Price: {moneyFormat(product.price)}</p>
+                            <p><strong>Price: {moneyFormat(product.price)} </strong></p>
+                        </div>
+
+                        <div className="product-price-container">
+                            <p>{product.description}</p>
                         </div>
                         
                         
-                        <div className="product-size-container">
-                            <label>Size:</label>
-                            <select value={selectedSize} onChange={handleSizeChange}>
-
-                                <option disabled selected>Select Size</option>
-
-                                    {Object.keys(product.qty).map((size) => (
-                                <option key={size} value={size}>{size}</option>
-                                    ))}
-                            </select>
-                        </div>
                         
-                        <div className="product-qty-container">
-                            <label>Quantity:</label>
-                            <input class='qty-dropdown' type="number" value={selectedQty} min={1} onChange={handleQtyChange} />
-                        </div>
-
-                        <div className="product-button-container">
-                            <button className="add-to-cart-button" onClick={handleAddToCart}>Add to Cart</button>
-                            <button className="close-button" onClick={onClose}>back</button>
-                        </div>
 
                     </div>
 

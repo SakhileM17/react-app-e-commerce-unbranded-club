@@ -14,7 +14,15 @@ body {
     flex-direction: column;
 }
 
+select {
+    
+    border-radius: 5PX;
+}
 
+.errorMsg {
+
+    color: red;
+}
 
 
 /* -------------------------------
@@ -330,14 +338,32 @@ body {
         display: flex;
         width: 120px;
         height: 40px;
-        background-color: white;
+        background-color: black;
         justify-content:center;
         align-items: center;
         text-align: center;
         border-radius: 10px;
         border: 1px solid black;
         text-decoration: none;
+        color: white;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and color */
+        transition: transform 0.1s ease; /* Smooth */
+        border: none;
+    }
+
+    .product-shop-button:hover {
+
+        background-color: lightgray;
         color: black;
+
+
+    }
+
+    .product-shop-button:active {
+
+        transform: scale(1.1); /* Scales up the button to 110% of its original size */
+
+
     }
 
     /*--------------------------------------------
@@ -378,6 +404,54 @@ body {
         padding: 0 2%;
     }
 
+    .cart-button-container {
+
+        background-color: aqua;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .cart-button-checkout {
+
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        height: 50px;
+        width: 100px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and color */
+        transition: transform 0.1s ease; 
+    }
+
+    .cart-button-checkout:active {
+
+        transform: scale(1.1); /* Scales up the button to 110% of its original size */
+
+
+    }
+
+    .cart-button-clear {
+
+        background-color: lightgrey;
+        color : black;
+        border: none;
+        border-radius: 5px;
+        height: 50px;
+        width: 100px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and color */
+        transition: transform 0.1s ease; 
+    }
+
+    .cart-button-clear:active {
+
+        transform: scale(1.1); /* Scales up the button to 110% of its original size */
+
+    }
+
+    
     /* ---------------------- User Product List -------------------------------*/
 
     .cart-customer-product-container {
@@ -387,17 +461,34 @@ body {
         flex-direction: row;
         width: 90%;
         height: 210px;
-        justify-content: space-between;
+        justify-content: space-evenly;
         border-top: 1px solid white;
         border-bottom: 1px solid white;
         align-items: center;
-
-    }
-
-    .cart-product-container {
         
+
     }
 
+    .cart-customer-product-name-container {
+
+        background-color: orange;
+        padding: 0 2%;
+    }
+    .button-remove-item {
+
+        background-color: lightgray;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and color */
+        transition: transform 0.1s ease; /* Smooth */
+    }
+
+    .button-remove-item:active {
+        transform: scale(1.1); /* Scales up the button to 110% of its original size */
+    }
+
+    
     .cart-customer-total-container {
 
         border-top: 1px solid black;
@@ -414,6 +505,15 @@ body {
 /*-------------------------------------------
             Checkout
 ----------------------------------------------*/
+
+.checkout-form-error-container {
+
+    background-color: lightgray; 
+    color: red;
+    font-size: 15px;
+    border-radius: 10px;
+    padding-left: 3%;
+}
 
 .checkout-main-container {
 
@@ -465,12 +565,19 @@ body {
     width: 50%;
 }
 
+.checkout-body-form-container {
+    display: flex;
+    flex-direction: row;
+    background-color: peru;
+    width: 100%;
+}
 .checkout-form-element-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 95%;
     margin: 0 auto;
+    align-items: center;
     background-color: lightblue
 }
 
@@ -490,6 +597,30 @@ body {
     border-radius: 5px;
     border: 1px solid gray;
 
+}
+
+.checkbox-form-label {
+
+    display: flex;
+    justify-content: center;
+    background-color: chartreuse;
+    width: 40%;
+    margin: auto;
+    align-items: center;
+}
+
+.checkbox-form-input {
+
+    background-color: chocolate;
+    width: 70%;
+    font-size: 14px;
+}
+
+.checkout-check-box {
+
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
 }
 
 /* Checkout - right side */
@@ -529,6 +660,150 @@ body {
     flex-direction: column;
 }
 
+.checkout-button-container {
+
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.checkout-button-cancel {
+    background-color: lightgrey;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+    height: 50px;
+}
+
+.checkout-button-pay {
+
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+    height: 50px;
+
+
+}
+
+/* ----------------------------------------
+            Order 
+ ------------------------------------------*/
+
+ .Main-order-container {
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 90%;
+    background-color: red;
+    z-index: 9999;
+ }
+
+ .order-container {
+
+    background-color: lightblue;
+    width: 90%;
+ }
+
+ .order-description-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+
+ .order-progress-image-container {
+
+    display: flex;
+    justify-content: center;
+    background-color: #007bff;
+ }
+ .order-links-container {
+
+    background-color: burlywood;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+ }
+
+ .order-button-container {
+
+    background-color: chartreuse;
+    display: flex;
+    justify-content: center;
+    padding: 4% 0;
+ }
+
+ .order-button-continue-shopping {
+
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+ }
+
+ /*----------------------------------------
+                Customer Order
+    --------------------------------------*/
+
+    .customer-order-header-container {
+
+        background-color: pink;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+    }
+
+    .customer-order-body-container {
+
+        background-color: purple;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-bottom: 1px solid black;
+
+
+    }
+
+    .customer-order-detail-address-container {
+
+        background-color: lightblue;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .customer-order-item-container {
+
+        display: flex;
+        flex-direction: column;
+        background-color: lightgrey;
+        width: 80%;
+        margin: 0 auto;
+    }
 /*--------------------------------------------
                 Footer
 ----------------------------------------------*/

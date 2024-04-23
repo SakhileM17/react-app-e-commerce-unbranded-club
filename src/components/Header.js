@@ -37,15 +37,13 @@ const Header = () => {
 
                 <div className="nav-menu-links-container">
 
-                    <Link className="nav-menu-links" >Profile</Link>
-                    
-                </div>
-
-                <div className="nav-menu-links-container">
-
                     <Link className="nav-menu-links" to='cart' > Cart </Link>
                     
                 </div>
+
+        
+
+                
 
             </div>
             
