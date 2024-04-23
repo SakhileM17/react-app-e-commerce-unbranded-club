@@ -1,0 +1,827 @@
+body {
+    font-family: "Helivicta", sans-serif; /* Use "Helivicta" font. If unavailable, fallback to sans-serif */
+  }
+
+  .application-pages-container {
+    width: 100%;
+    background-color: aqua;
+}
+
+.application-container{
+
+    justify-content: space-between; /* Push header to top and footer to bottom */
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    
+    border-radius: 5PX;
+}
+
+.errorMsg {
+
+    color: red;
+}
+
+
+/* -------------------------------
+        Application Header
+    ------------------------------*/
+
+.app-header-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: pink;
+}
+
+.header-container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: orange;
+    width: 98%;
+    height: 100px;
+    position: absolute;
+    margin: 0 auto;
+
+}
+
+.logo-container {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    background-color: green;
+}
+
+.header-logo {
+    padding: 5%;
+    width: 50%;
+}
+
+/* Navi Menu */
+
+.nav-menu-container {
+    background-color: blue;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nav-menu-links-container {
+    background-color: red;
+    width: 100px;
+    height: 80%;
+    display: flex;
+    margin: auto;
+}
+
+.nav-menu-links {
+
+    text-align: center;
+    background-color: burlywood;
+    justify-content: center;
+    margin:  auto 0;
+    width: 200px;
+    height: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+
+}
+
+.nav-menu-links:hover {
+    color: black;
+
+}
+/* End of Application Header */
+
+
+/*-------------------------------------------
+            Home Page Container 
+--------------------------------------------*/
+
+.home-page-container {
+    width: 100%;
+    background-color: pink;
+}
+
+/* Hero Section */
+
+.hero-image-container {
+    width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+
+}
+
+.hero-image-shop-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #007bff; /* Change the background color as needed */
+    color: #fff; /* Text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    width: 500px;
+    height: 300px;
+    
+}
+
+.hero-image-shop-container p {
+    font-size: 50px;
+}
+
+
+.shop-now-button {
+
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+    padding: 10px;
+    
+}
+
+/*-----------------------------------------------
+            Summer/winter collection
+--------------------------------------------------*/
+
+.collection-container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: lime;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.collection-image {
+    width: 99%;
+    height: 600px;
+
+}
+
+.collection-image-container {
+    position: relative; /* Ensure that child absolute positioning is relative to this container */
+    width: 100%;
+    background-color: aqua;
+}
+
+.collection-shop-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+    top: 60%; /* Position it vertically at the center of the parent container */
+    left: 50%; /* Position it horizontally at the center of the parent container */
+    transform: translate(-50%, -50%); /* Center it precisely */
+    z-index: 4; /* Ensure it's on top of other elements */
+    background-color: #007bff; /* Change the background color as needed */
+    color: #fff; /* Text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    width: 400px;
+    height: 200px;
+}
+
+.collection-shop-container p {
+    font-size: 30px;
+}
+
+
+.shop-now-button {
+
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+    padding: 10px;
+    
+}
+
+
+
+
+/*------------------------------------
+        Form contianer 
+-----------------------------------------*/
+
+.form-container {
+    position: relative;
+    width: 100%;
+}
+
+
+
+.form-hero-image {
+    position: relative; /* Change to relative */
+    width: 100%;
+}
+
+
+
+
+.form {
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 30%;
+    font-size: 21px;
+    top: 50%; /* Position from the top 50% */
+    left: 50%; /* Position from the left 50% */
+    transform: translate(-50%, -50%); /* Center the form */
+    background-color: rgba(255, 255, 255, 0.8); /* Add a background color with opacity */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; /* Center text horizontally */
+}
+
+/*------------------------------------------
+                    Shop 
+    -------------------------------------*/
+
+    .shop-page-container {
+        display: flex;
+        flex-direction: column;
+        background-color: orange;
+        padding: 10% 0;
+    }
+
+    .catalogue-container {
+
+        display: flex;
+        flex-direction: column; 
+        background-color: pink;
+        width: 100%;
+    }
+    
+    .catalogue-header-container {
+    
+        background-color: red;
+        text-align: center;
+    }
+    
+    .catalgue-products-container {
+    
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-between;
+        background-color: maroon;
+        margin: 0 auto;
+    }
+    /* Product */
+    
+    .product-form-container{
+    
+        display: flex;
+        flex-direction: column;
+        background-color: yellow;
+        align-items: center;
+    
+    }
+
+    .form-element{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .form-element-label {
+
+        padding: 10px 0;
+    }
+
+    .form-element-button-container {
+
+        padding: 20px 0;
+    }
+    .product-image {
+    
+        width: 300px;
+        height: 350px;
+    }
+    
+    .product-shop-button {
+        display: flex;
+        width: 120px;
+        height: 40px;
+        background-color: black;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+        border: 1px solid black;
+        text-decoration: none;
+        color: white;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and color */
+        transition: transform 0.1s ease; /* Smooth */
+        border: none;
+    }
+
+    .product-shop-button:hover {
+
+        background-color: lightgray;
+        color: black;
+
+
+    }
+
+    .product-shop-button:active {
+
+        transform: scale(1.1); /* Scales up the button to 110% of its original size */
+
+
+    }
+
+    /*--------------------------------------------
+                    cart
+    ---------------------------------------------*/
+
+    .cart-main-container {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: lightblue;
+    }
+
+    .cart-container {
+
+        display: flex;
+        flex-direction: column;
+        background-color: antiquewhite;
+        width: 75%;
+        height: 90%;
+        padding: 10% 0;
+        margin: auto;
+    }
+
+    .cart-header-container {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+    }
+
+    .cart-header {
+
+        padding: 0 2%;
+    }
+
+    .cart-button-container {
+
+        background-color: aqua;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .cart-button-checkout {
+
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        height: 50px;
+        width: 100px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and color */
+        transition: transform 0.1s ease; 
+    }
+
+    .cart-button-checkout:active {
+
+        transform: scale(1.1); /* Scales up the button to 110% of its original size */
+
+
+    }
+
+    .cart-button-clear {
+
+        background-color: lightgrey;
+        color : black;
+        border: none;
+        border-radius: 5px;
+        height: 50px;
+        width: 100px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and color */
+        transition: transform 0.1s ease; 
+    }
+
+    .cart-button-clear:active {
+
+        transform: scale(1.1); /* Scales up the button to 110% of its original size */
+
+    }
+
+    
+    /* ---------------------- User Product List -------------------------------*/
+
+    .cart-customer-product-container {
+
+        background-color: lightgray;
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        height: 210px;
+        justify-content: space-evenly;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        align-items: center;
+        
+
+    }
+
+    .cart-customer-product-name-container {
+
+        background-color: orange;
+        padding: 0 2%;
+    }
+    .button-remove-item {
+
+        background-color: lightgray;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and color */
+        transition: transform 0.1s ease; /* Smooth */
+    }
+
+    .button-remove-item:active {
+        transform: scale(1.1); /* Scales up the button to 110% of its original size */
+    }
+
+    
+    .cart-customer-total-container {
+
+        border-top: 1px solid black;
+    }
+
+
+
+    .cart-product-image {
+
+        width: 200px;
+        height: 200px;
+    }
+
+/*-------------------------------------------
+            Checkout
+----------------------------------------------*/
+
+.checkout-form-error-container {
+
+    background-color: lightgray; 
+    color: red;
+    font-size: 15px;
+    border-radius: 10px;
+    padding-left: 3%;
+}
+
+.checkout-main-container {
+
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    width: 100%;
+    padding: 10% 0;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.checkout-container {
+
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    width: 80%;
+}
+
+.checkout-header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: blanchedalmond;
+    width: 90%;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+    
+}
+
+.checkout-body-container {
+
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+    width: 90%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.chechout-billing-form-container {
+
+    display: flex;
+    flex-direction: column;
+    background-color: lime;
+    width: 50%;
+}
+
+.checkout-body-form-container {
+    display: flex;
+    flex-direction: row;
+    background-color: peru;
+    width: 100%;
+}
+.checkout-form-element-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    align-items: center;
+    background-color: lightblue
+}
+
+.checkout-input {
+    width: 300px;
+    height: 30px;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.checkout-select {
+
+    width: 300px;
+    height: 30px;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid gray;
+
+}
+
+.checkbox-form-label {
+
+    display: flex;
+    justify-content: center;
+    background-color: chartreuse;
+    width: 40%;
+    margin: auto;
+    align-items: center;
+}
+
+.checkbox-form-input {
+
+    background-color: chocolate;
+    width: 70%;
+    font-size: 14px;
+}
+
+.checkout-check-box {
+
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+/* Checkout - right side */
+
+.checkout-billing-summary-container {
+
+    display: flex;
+    flex-direction: column;
+    background-color: brown;
+    justify-content: space-between;
+    width: 50%;
+    
+}
+
+
+
+.checkout-billing-info {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    background-color: cadetblue;
+}
+
+.billing-total {
+
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    background-color: lightgrey;
+}
+
+
+.checkout-shipping-toggle-switch-container {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-button-container {
+
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.checkout-button-cancel {
+    background-color: lightgrey;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+    height: 50px;
+}
+
+.checkout-button-pay {
+
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+    height: 50px;
+
+
+}
+
+/* ----------------------------------------
+            Order 
+ ------------------------------------------*/
+
+ .Main-order-container {
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 90%;
+    background-color: red;
+    z-index: 9999;
+ }
+
+ .order-container {
+
+    background-color: lightblue;
+    width: 90%;
+ }
+
+ .order-description-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+
+ .order-progress-image-container {
+
+    display: flex;
+    justify-content: center;
+    background-color: #007bff;
+ }
+ .order-links-container {
+
+    background-color: burlywood;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+ }
+
+ .order-button-container {
+
+    background-color: chartreuse;
+    display: flex;
+    justify-content: center;
+    padding: 4% 0;
+ }
+
+ .order-button-continue-shopping {
+
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+ }
+
+ /*----------------------------------------
+                Customer Order
+    --------------------------------------*/
+
+    .customer-order-header-container {
+
+        background-color: pink;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+    }
+
+    .customer-order-body-container {
+
+        background-color: purple;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-bottom: 1px solid black;
+
+
+    }
+
+    .customer-order-detail-address-container {
+
+        background-color: lightblue;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .customer-order-item-container {
+
+        display: flex;
+        flex-direction: column;
+        background-color: lightgrey;
+        width: 80%;
+        margin: 0 auto;
+    }
+/*--------------------------------------------
+                Footer
+----------------------------------------------*/
+
+.app-footer-container {
+    
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    background-color: greenyellow;
+    /* Adjust other styles as needed */
+}
+
+.copyright-container {
+    text-align: center;
+}
+
