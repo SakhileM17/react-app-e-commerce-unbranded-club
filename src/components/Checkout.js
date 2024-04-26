@@ -341,7 +341,7 @@ const handleCloseOrderModal = () => {
                                     <div className="checkout-form-label">
 
                                         <label>
-                                            <p>House Number/Appartment Number/Unit Number <RequiredStar required /></p>
+                                            <p>House/Appartment/Unit Number <RequiredStar required /></p>
                                         </label>
 
                                     </div>

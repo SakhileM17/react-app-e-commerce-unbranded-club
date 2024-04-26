@@ -19,6 +19,9 @@ const Header = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    };
     return (
 
         <div className="header-container slide-from-top">
@@ -43,13 +46,13 @@ const Header = () => {
             {/* Mobile Nav Menu */}
             {isMenuOpen && (
                 <div className="mobile-nav-menu">
-                    <Link className="nav-menu-links" to="">
+                    <Link className="nav-menu-links" to="" onClick={closeMenu}>
                         Home
                     </Link>
-                    <Link className="nav-menu-links" to="shop">
+                    <Link className="nav-menu-links" to="shop" onClick={closeMenu}>
                         Shop
                     </Link>
-                    <Link className="nav-menu-links" to="cart">
+                    <Link className="nav-menu-links" to="cart" onClick={closeMenu}>
                         Cart
                     </Link>
                 </div>

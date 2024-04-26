@@ -46,11 +46,11 @@ const CustomProductModal = ({ product, onClose, onSubmit }) => {
                 <div className="product-modal-header-container">
 
                     <div className="unbranded-club-Logo-container">
-                        <h1>Unbranded Club</h1>
+                        <h1>Product Info</h1>
                     </div>
 
                     <div className="unbranded-club-Logo-container">
-                        <img src={UnbrandedClubLogoBlack} alt="unbranded-club-logo black"/>
+                        <img src={UnbrandedClubLogoBlack} alt="unbranded-club-logo-black" className="unbranded-club-logo-black"/>
                     </div>
 
                 </div>
@@ -74,8 +74,6 @@ const CustomProductModal = ({ product, onClose, onSubmit }) => {
                         <div className="product-price-container">
                             <p>{product.description}</p>
                         </div>
-                        
-                        
                         
 
                     </div>

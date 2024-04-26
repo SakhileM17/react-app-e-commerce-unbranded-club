@@ -543,7 +543,7 @@ select {
 }
 
 .collection-shop-container p {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 
@@ -850,7 +850,6 @@ select {
     
     .catalogue-header-container {
     
-        
         text-align: center;
     }
     
@@ -933,6 +932,13 @@ select {
 
 @media only screen and (max-width: 450px) {
     /* Your mobile-specific CSS rules here */
+
+    .catalogue-header-container {
+    
+        text-align: center;
+        padding: 10% 0;
+    }
+    
 
     .catalgue-products-container {
     
@@ -1154,6 +1160,20 @@ select {
 
     }
 
+    .continue-shopping-button {
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and color */
+        transition: transform 0.1s ease; 
+    }
+
+    .continue-shopping-button:active {
+
+        transform: scale(1.1); /* Scales up the button to 110% of its original size */
+
+    }
+
     
     /* ---------------------- User Product List -------------------------------*/
 
@@ -1226,7 +1246,7 @@ select {
         width: 100%;
         align-items: center;
         margin: 0 auto;
-        padding: 2% 0;
+        padding: 10% 0;
     }
 
     .cart-header {
@@ -1578,10 +1598,12 @@ select {
 
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 95%;
+        background-color: lime;
         padding: 10% 0;
         justify-content: center;
         align-items: center;
+        margin: 0 auto;
     
     }
 
@@ -1590,6 +1612,7 @@ select {
         display: flex;
         flex-direction: column;
         width: 100%;
+        
     }
     
 
@@ -1598,6 +1621,7 @@ select {
         flex-direction: row;
         justify-content: space-between;
         width: 90%;
+        padding: 8% 0;
         align-items: center;
         margin: 0 auto;
         border-bottom: 1px solid black;
@@ -1630,7 +1654,7 @@ select {
     .checkout-body-form-container {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 95%;
     }
 
     .chechout-billing-form-container {
@@ -1641,7 +1665,7 @@ select {
     }
 
     .checkout-input {
-        width: 250px;
+        width: 160px;
         height: 30px;
         margin: auto;
         border-radius: 5px;
@@ -1661,7 +1685,7 @@ select {
 
 .checkout-select {
 
-    width: 250px;
+    width: 150px;
     height: 30px;
     margin: auto;
     border-radius: 5px;
@@ -1831,7 +1855,7 @@ select {
 
     .copyright-container p{
 
-        font-size: 30px;
+        font-size: 20px;
 
     }
 }

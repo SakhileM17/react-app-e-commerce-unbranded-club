@@ -1,6 +1,7 @@
 import React, { useReducer, useState } from "react";
 import { useEffect } from "react";
 import {connect} from 'react-redux'
+import { Navigate, useNavigate } from "react-router-dom";
 
 import { v4 as uuidv4 } from 'uuid';
 
@@ -24,6 +25,7 @@ import Toast from "../utils/modals/toast";
 
 
 
+
 const Collection = ({addToCart}) => {
 
     // State to manage selected size for each product
@@ -37,6 +39,8 @@ const Collection = ({addToCart}) => {
     const [toastMessage, setToastMessage] = useState(""); // Toast message state
 
     const [setCartItems] = useState([]); // Define cartItems state
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         let timer;
@@ -106,6 +110,15 @@ const Collection = ({addToCart}) => {
         setShowToast(false);
 
     };
+
+    const navigateToCart = () => {
+
+        
+
+        navigate('/cart')
+
+
+    }
 
     
     
@@ -214,7 +227,7 @@ const Collection = ({addToCart}) => {
             {showToast && (
                 <Toast
                     message={toastMessage}
-                    onClose={closeToast}
+                    onClose={navigateToCart}
                 />
             )}
 

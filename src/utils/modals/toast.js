@@ -18,7 +18,7 @@ const Toast = ({message, onClose}) => {
             </div>
 
             <div className="toast-button-container">
-                <button className="toast-close-button" onClick={onClose}>Close</button>
+                <button className="toast-close-button" onClick={onClose}>Cart</button>
             </div>
 
         </div>

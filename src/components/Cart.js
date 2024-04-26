@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux'; // Import connect
 import { useNavigate } from 'react-router-dom';
 import { useReducer,useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import { moneyFormat } from '../utils/moneyformatter';
 
@@ -52,6 +53,11 @@ const Cart = ({ cartItems , removeFromCart, clearCart, selectQty, totalPrice, ad
     updateQuantity(itemId, newQuantity);
   };
 
+  const navigateToShop = () => {
+
+    navigate('/shop')
+
+  }
   
     
   return (
@@ -227,7 +233,12 @@ const Cart = ({ cartItems , removeFromCart, clearCart, selectQty, totalPrice, ad
               </div>
 
             ) : (
-              <p>Your cart is empty.</p>
+
+              <div>
+                  <p>Your cart is empty</p>
+
+                  <button className='continue-shopping-button' onClick={navigateToShop}>Continuee Shopping</button>
+              </div>
             )}
           </div>
 
