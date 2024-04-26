@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-app-e-commerce-unbranded-club/static/css/main.a40c0ada.css",
-    "main.js": "/react-app-e-commerce-unbranded-club/static/js/main.c3dcf1c3.js",
+    "main.css": "/react-app-e-commerce-unbranded-club/static/css/main.46cb704f.css",
+    "main.js": "/react-app-e-commerce-unbranded-club/static/js/main.86150a55.js",
     "static/js/453.4c2dae8d.chunk.js": "/react-app-e-commerce-unbranded-club/static/js/453.4c2dae8d.chunk.js",
     "static/media/unbranded-club-hero.png": "/react-app-e-commerce-unbranded-club/static/media/unbranded-club-hero.54031fba9247c4d21eca.png",
     "static/media/collection-left.png": "/react-app-e-commerce-unbranded-club/static/media/collection-left.16800de2292aaa5ef99e.png",
@@ -11,12 +11,12 @@
     "static/media/product-joggers.png": "/react-app-e-commerce-unbranded-club/static/media/product-joggers.d9a9de1b390f7145ddc0.png",
     "static/media/products-tracksuit.png": "/react-app-e-commerce-unbranded-club/static/media/products-tracksuit.a4d71643cc6a4f6fa0fa.png",
     "index.html": "/react-app-e-commerce-unbranded-club/index.html",
-    "main.a40c0ada.css.map": "/react-app-e-commerce-unbranded-club/static/css/main.a40c0ada.css.map",
-    "main.c3dcf1c3.js.map": "/react-app-e-commerce-unbranded-club/static/js/main.c3dcf1c3.js.map",
+    "main.46cb704f.css.map": "/react-app-e-commerce-unbranded-club/static/css/main.46cb704f.css.map",
+    "main.86150a55.js.map": "/react-app-e-commerce-unbranded-club/static/js/main.86150a55.js.map",
     "453.4c2dae8d.chunk.js.map": "/react-app-e-commerce-unbranded-club/static/js/453.4c2dae8d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a40c0ada.css",
-    "static/js/main.c3dcf1c3.js"
+    "static/css/main.46cb704f.css",
+    "static/js/main.86150a55.js"
   ]
 }
