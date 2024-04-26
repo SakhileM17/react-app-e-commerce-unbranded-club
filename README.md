@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # react-app-e-commerce-unbranded-club
 
 Project is currently in progress
