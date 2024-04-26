@@ -1,11 +1,13 @@
 
 # react-app-e-commerce-unbranded-club
 
-<a href='https://sakhilem17.github.io/react-app-e-commerce-unbranded-club'> Click to view </a>
+<a href='https://sakhilem17.github.io/react-app-e-commerce-unbranded-club' target='_blank'> Click to view E-commerce application </a>
 
 This repo contains a project react app e-commerce simulation app for unbranded-club. 
 
 <img src="https://github.com/SakhileM17/react-app-e-commerce-unbranded-club/blob/main/src/assets/screenshots/Landing_Page.png?raw=true">
+
+Application is optimized for both Mobile and desktop devices.
 
 # Features
 
