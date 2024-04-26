@@ -199,12 +199,7 @@ select {
   /* Small - Tablet Styles */
 @media only screen and (min-width: 451px) and (max-width: 850px) {
     /* Your tablet-specific CSS rules here */
-    .header-container {
-
-        
-        
-    }
-
+    
     .mobile-nav-menu {
 
         display: flex;
@@ -1164,6 +1159,8 @@ select {
         background-color: black;
         color: white;
         border-radius: 5px;
+        height: 50px;
+        border: none;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and color */
         transition: transform 0.1s ease; 
     }
@@ -1438,6 +1435,7 @@ select {
     align-items: center;
     margin: 0 auto;
     border-bottom: 1px solid black;
+    padding: 2% 0;
     
 }
 
@@ -1448,6 +1446,7 @@ select {
     width: 90%;
     justify-content: space-between;
     margin: 0 auto;
+    padding: 5% 0;
 }
 
 .chechout-billing-form-container {
@@ -1455,6 +1454,7 @@ select {
     display: flex;
     flex-direction: column;
     width: 50%;
+    padding: 0 5%;
 }
 
 .checkout-body-form-container {
@@ -1574,6 +1574,13 @@ select {
     border: none;
     width: 150px;
     height: 50px;
+    transition: transform 0.1s ease; /* Smooth */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and color */
+}
+
+.checkout-button-cancel:active {
+    transform: scale(1.1); /* Scales up the button to 110% of its original size */
+
 }
 
 .checkout-button-pay {
@@ -1584,7 +1591,12 @@ select {
     border: none;
     width: 150px;
     height: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and color */
+    transition: transform 0.1s ease; /* Smooth */
+}
 
+.checkout-button-pay:active {
+    transform: scale(1.1); /* Scales up the button to 110% of its original size */
 
 }
 
@@ -1599,7 +1611,6 @@ select {
         display: flex;
         flex-direction: column;
         width: 95%;
-        background-color: lime;
         padding: 10% 0;
         justify-content: center;
         align-items: center;
@@ -1662,6 +1673,7 @@ select {
         display: flex;
         flex-direction: column;
         width: 100%;
+        padding: 0;
     }
 
     .checkout-input {
@@ -1707,6 +1719,39 @@ select {
     background-color: chocolate;
     width: 50%;
     font-size: 12px;
+}
+
+.checkout-button-cancel {
+    background-color: lightgrey;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    width: 110px;
+    height: 40px;
+    transition: transform 0.1s ease; /* Smooth */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and color */
+}
+
+.checkout-button-cancel:active {
+    transform: scale(1.1); /* Scales up the button to 110% of its original size */
+
+}
+
+.checkout-button-pay {
+
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: 110px;
+    height: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and color */
+    transition: transform 0.1s ease; /* Smooth */
+}
+
+.checkout-button-pay:active {
+    transform: scale(1.1); /* Scales up the button to 110% of its original size */
+
 }
 
 

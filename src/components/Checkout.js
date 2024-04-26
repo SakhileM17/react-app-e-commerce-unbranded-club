@@ -10,10 +10,10 @@ import { moneyFormat } from "../utils/moneyformatter";
 import RequiredStar from "../utils/requiredStar";
 
 import { Country } from "../data/countries";
-import { City } from "../data/countries";
+
 
 import { calculateDelivery } from "../redux/reducers/checkoutReducer";
-import { addToCheckOut } from "../redux/reducers/checkoutReducer";
+
 import { setOrderInfo} from "../redux/reducers/checkoutReducer";
 
 import { clearCart } from "../redux/reducers/cartReducer";
@@ -532,12 +532,7 @@ const handleCloseOrderModal = () => {
 
                                     <div>
                                         <p>
-                                            By clicking on 'Pay and Place Order', you agree (i) to make your purchase from 
-                                            Global-e as merchant of record for this transaction, subject to Unbranded Club 
-                                            Terms of Sale; (ii) that your information will be handled by Unbranded Club in 
-                                            accordance with the Unbranded Club Privacy Policy; and (iii) that Unbranded Club
-                                            will share your information (excluding the payment details) with Unbranded Club(Pty) 
-                                            Ltd.</p>
+                                           By clicking 'Pay and Place Order' you'll see your order confirmation. This a e-commerce demo is purley a e-commerce sim, it's not integrated to a payment gate. </p>
                                     </div>
 
                                 </div>
