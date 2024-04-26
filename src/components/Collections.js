@@ -113,7 +113,7 @@ const Collection = ({addToCart}) => {
     return (
         <div className="catalogue-container">
             <div className="catalogue-header-container">
-                <div>
+                <div className="catalogue-header-elements">
                     <h1>2022 Collection</h1>
                     <p>Shop our latest 2022 winter collection</p>
                 </div>

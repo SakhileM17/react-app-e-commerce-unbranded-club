@@ -66,10 +66,13 @@ const Cart = ({ cartItems , removeFromCart, clearCart, selectQty, totalPrice, ad
 
             <h1>My shopping cart</h1>
           </div>
+
           <div className='cart-header'>
             <img  src={UnbrandedClubLogoBlack} alt="unbranded-club-logo black"/>
           </div>
+
         </div>
+        
         <div className='cart-production-description'>
 
           <form onSubmit={handleSubmit}>

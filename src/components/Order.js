@@ -54,15 +54,7 @@
 
                     </div>
 
-                    <div className="order-description-body">
-
-                        <div className="order-progress-image-container">
-
-                            <h1>Image</h1>
-
-                        </div>
-
-                    </div>
+                    
 
                     <div className="order-descriprion-footer">
 

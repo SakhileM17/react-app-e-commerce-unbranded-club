@@ -175,13 +175,13 @@ const handleCloseOrderModal = () => {
 
                 <div className="checkout-header-container">
 
-                    <div className="checkout-heading">
+                    <div className="cart-header">
 
                         <h1>Checkout</h1>
 
                     </div>
                     
-                    <div className="checkout-heading">
+                    <div className="cart-header">
 
                         <img src={UnbrandedClubLogoBlack} alt="unbranded-club-logo black"/>
 

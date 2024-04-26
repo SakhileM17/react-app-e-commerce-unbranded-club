@@ -4,7 +4,7 @@ body {
 
   .application-pages-container {
     width: 100%;
-    background-color: aqua;
+    
 }
 
 .application-container{
@@ -30,10 +30,12 @@ select {
     ------------------------------*/
 
 .app-header-container {
+    
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: pink;
+    
+    
 }
 
 .header-container {
@@ -41,38 +43,43 @@ select {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: orange;
     width: 98%;
     height: 100px;
-    position: absolute;
+    position: fixed;
     margin: 0 auto;
+    z-index: 999;
+    background-color: black;
+
+    padding:  0;
 
 }
 
 .logo-container {
+
     align-items: center;
     display: flex;
     justify-content: flex-start;
-    background-color: green;
+
 }
 
 .header-logo {
-    padding: 5%;
+    padding: 0 5%;
     width: 50%;
 }
 
 /* Navi Menu */
 
 .nav-menu-container {
-    background-color: blue;
+    
     width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
 }
 
 .nav-menu-links-container {
-    background-color: red;
+    
     width: 100px;
     height: 80%;
     display: flex;
@@ -82,7 +89,6 @@ select {
 .nav-menu-links {
 
     text-align: center;
-    background-color: burlywood;
     justify-content: center;
     margin:  auto 0;
     width: 200px;
@@ -94,9 +100,172 @@ select {
 }
 
 .nav-menu-links:hover {
-    color: black;
+    color: grey;
 
 }
+
+/* Hamburger Icon */
+.hamburger-icon {
+    display: none; /* Hide by default */
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+
+}
+
+/* Mobile Nav Menu */
+.mobile-nav-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    position: absolute;
+    top: 100%; /* Adjust according to your header height */
+    right: 0;
+    left: 0;
+}
+
+/* Mobile Styles */
+
+/* Iphone 14 Pro Max*/
+
+@media only screen and (max-width: 450px) {
+    /* Your mobile-specific CSS rules here */
+
+    .header-container {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 98%;
+        height: 60px;
+        position: fixed;
+        margin: 0 auto;
+        z-index: 999;
+        background-color: black;
+    
+        padding:  0;
+    
+    }
+
+    .mobile-nav-menu {
+
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        left: 55%;
+        height: 30vh;
+    }
+
+    .nav-menu-links {
+        
+        display: flex;
+        text-align: center;
+        align-items: center;
+        background-color: lightgrey;
+        justify-content: center;
+        margin:  auto 0;
+        width: 200px;
+        height: 50px;
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+    }
+
+    .hamburger-icon {
+
+        display: block;
+        padding: 0 5%;
+        align-items: center;
+        margin: auto 0;
+        
+    }
+
+
+
+    .nav-menu-container {
+        display: none; /* Hide the regular nav menu */
+    }
+
+  }
+
+  /* Small - Tablet Styles */
+@media only screen and (min-width: 451px) and (max-width: 850px) {
+    /* Your tablet-specific CSS rules here */
+    .header-container {
+
+        
+        
+    }
+
+    .mobile-nav-menu {
+
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        left: 75%;
+        height: 30vh;
+        border-bottom-left-radius: 20px;
+    }
+
+    .nav-menu-links {
+        
+        display: flex;
+        text-align: center;
+        align-items: center;
+        background-color: lightgrey;
+        justify-content: center;
+        margin:  auto 0;
+        width: 200px;
+        height: 50px;
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+    }
+
+    .hamburger-icon {
+        
+        display: block;
+        align-items: center;
+        margin: auto 0;
+        
+    }
+
+
+
+    .nav-menu-container {
+        display: none; /* Hide the regular nav menu */
+    }
+  }
+
+  /*  Desktops Styles */
+@media only screen and (min-width: 851px) and (max-width: 1750px) {
+
+    .header-logo {
+        padding: 5% ;
+        width: 50%;
+    }
+
+    .nav-menu-links {
+
+        text-align: center;
+        justify-content: center;
+        margin:  auto 0;
+        width: 200px;
+        height: 50%;
+        text-decoration: none;
+        font-size: 30px;
+        color: white;
+    
+    }
+
+
+}
+
 /* End of Application Header */
 
 
@@ -106,7 +275,6 @@ select {
 
 .home-page-container {
     width: 100%;
-    background-color: pink;
 }
 
 /* Hero Section */
@@ -121,6 +289,7 @@ select {
 }
 
 .hero-image-shop-container {
+    
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -131,7 +300,6 @@ select {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    background-color: #007bff; /* Change the background color as needed */
     color: #fff; /* Text color */
     padding: 10px 20px;
     border: none;
@@ -160,6 +328,172 @@ select {
     
 }
 
+/* Mobile Styles */
+
+/* Iphone 14 Pro Max*/
+
+@media only screen and (max-width: 450px) {
+    /* Your mobile-specific CSS rules here */
+
+    .hero-image-shop-container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 1px;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        color: #fff; /* Text color */
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer;
+        width: 200px;
+        height: 100px;
+
+    }
+
+    .hero-image-shop-container p{
+
+        font-size: 20px;
+    
+    }
+    
+
+  }
+
+  /* Small - Tablet Styles */
+@media only screen and (min-width: 451px) and (max-width: 850px) {
+    /* Your tablet-specific CSS rules here */
+
+    .hero-image-shop-container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 1px;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        color: #fff; /* Text color */
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer;
+        width: 400px;
+        height: 200px;
+
+    }
+
+    .hero-image-shop-container p{
+
+        font-size: 40px;
+    
+    }
+    
+
+
+  }
+
+  /* Large Tablets and Small Desktops Styles */
+@media only screen and (min-width: 851px) and (max-width: 1301px) {
+    /* Your tablet-specific CSS rules here */
+
+    .hero-image-shop-container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 1px;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        color: #fff; /* Text color */
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer;
+        width: 400px;
+        height: 200px;
+
+    }
+
+    .hero-image-shop-container p{
+
+        font-size: 40px;
+    
+    }
+    
+
+
+  }
+
+  /*  Desktops Styles */
+@media only screen and (min-width: 1302px) and (max-width: 1750px) {
+    /* Your tablet-specific CSS rules here */
+
+    .hero-image-shop-container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 1px;
+        top: 120%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        color: #fff; /* Text color */
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer;
+        width: 800px;
+        height: 600px;
+
+    }
+
+    .hero-image-shop-container p{
+
+        font-size: 60px;
+    
+    }
+
+    .hero-image-shop-container :link{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 40px;
+        justify-content: center;
+        border-radius: 10px;
+        color: white;
+        border: 1px solid white;
+        text-decoration: none;
+        padding: 10px;
+
+        font-size: 20px;
+    
+    } 
+
+   
+    
+
+
+  }
+
+
+  
+  
+
 /*-----------------------------------------------
             Summer/winter collection
 --------------------------------------------------*/
@@ -169,7 +503,6 @@ select {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: lime;
     width: 100%;
     justify-content: center;
 }
@@ -184,7 +517,6 @@ select {
 .collection-image-container {
     position: relative; /* Ensure that child absolute positioning is relative to this container */
     width: 100%;
-    background-color: aqua;
 }
 
 .collection-shop-container {
@@ -198,7 +530,6 @@ select {
     left: 50%; /* Position it horizontally at the center of the parent container */
     transform: translate(-50%, -50%); /* Center it precisely */
     z-index: 4; /* Ensure it's on top of other elements */
-    background-color: #007bff; /* Change the background color as needed */
     color: #fff; /* Text color */
     padding: 10px 20px;
     border: none;
@@ -224,6 +555,92 @@ select {
     text-decoration: none;
     padding: 10px;
     
+}
+
+/* Mobile Styles */
+
+/* Iphone 14 Pro Max*/
+
+@media only screen and (max-width: 450px) {
+    /* Your mobile-specific CSS rules here */
+
+    .collection-image {
+
+        width: 99%;
+        height: 250px;
+    
+    }
+
+    .collection-shop-container {
+
+        display: none;
+
+    }
+    
+    
+
+}
+
+/* Small - Tablet Styles */
+@media only screen and (min-width: 451px) and (max-width: 850px) {
+    /* Your tablet-specific CSS rules here */
+
+    .collection-image {
+
+        width: 99%;
+        height: 500px;
+    
+    }
+
+    .collection-shop-container {
+
+        display: none;
+
+    }
+    
+
+
+  }
+
+  /*  Desktops Styles */
+@media only screen and (min-width: 851px) and (max-width: 1750px) {
+    /* Your tablet-specific CSS rules here */ 
+
+    .collection-image {
+
+        width: 99%;
+        height: 800px;
+    
+    }
+
+    .collection-shop-container {
+
+        width: 90%;
+
+
+
+    }
+
+    .collection-shop-container :link {
+
+        width: 150px;
+        height: 30px;
+        align-items: center;
+        font-size: 20px;
+
+
+
+    }
+
+    .collection-shop-container p{
+
+        font-size: 30px;
+
+
+
+    }
+    
+
 }
 
 
@@ -266,6 +683,151 @@ select {
     text-align: center; /* Center text horizontally */
 }
 
+.form-button-join {
+
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+    height: 25px;
+    padding: 2;
+}
+
+/* Mobile Styles */
+
+/* Iphone 14 Pro Max*/
+
+@media only screen and (max-width: 450px) {
+
+    .form-hero-image {
+        position: relative; /* Change to relative */
+        width: 100%;
+        height: 700px;
+    }
+
+    .form {
+
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 50%;
+        height: 70%;
+        font-size: 21px;
+        top: 50%; /* Position from the top 50% */
+        left: 50%; /* Position from the left 50% */
+        transform: translate(-50%, -50%); /* Center the form */
+        background-color: rgba(255, 255, 255, 0.8); /* Add a background color with opacity */
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center; /* Center text horizontally */
+    }
+
+    .form label {
+
+        font-size: 20px;
+    }
+
+
+}
+
+/* Small - Tablet Styles */
+@media only screen and (min-width: 451px) and (max-width: 850px) {
+    /* Your tablet-specific CSS rules here */
+
+    .form-hero-image {
+        position: relative; /* Change to relative */
+        width: 100%;
+        height: 700px;
+    }
+
+    .form {
+
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 60%;
+        height: 70%;
+        font-size: 21px;
+        top: 50%; /* Position from the top 50% */
+        left: 50%; /* Position from the left 50% */
+        transform: translate(-50%, -50%); /* Center the form */
+        background-color: rgba(255, 255, 255, 0.8); /* Add a background color with opacity */
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center; /* Center text horizontally */
+    }
+
+    .form label {
+
+        font-size: 20px;
+    }
+
+
+}
+
+/*  Desktops Styles */
+@media only screen and (min-width: 851px) and (max-width: 1750px) {
+    /* Your tablet-specific CSS rules here */ 
+
+    .form-hero-image {
+        position: relative; /* Change to relative */
+        width: 100%;
+        height: 1200px;
+    }
+
+    .form {
+
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 60%;
+        height: 70%;
+        font-size: 30px;
+        top: 50%; /* Position from the top 50% */
+        left: 50%; /* Position from the left 50% */
+        transform: translate(-50%, -50%); /* Center the form */
+        background-color: rgba(255, 255, 255, 0.8); /* Add a background color with opacity */
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center; /* Center text horizontally */
+    }
+
+    .form label {
+
+        font-size: 30px;
+    }
+
+    .form-button-join {
+
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        width: 100px;
+        height: 30px;
+        padding: 2;
+        font-size: 20px;
+    }
+
+    .form-email-input {
+
+        width: 300px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        margin: 0 10px  ;
+        font-size: 20px;
+        
+    }
+    
+
+
+}
+
 /*------------------------------------------
                     Shop 
     -------------------------------------*/
@@ -273,7 +835,6 @@ select {
     .shop-page-container {
         display: flex;
         flex-direction: column;
-        background-color: orange;
         padding: 10% 0;
     }
 
@@ -281,13 +842,12 @@ select {
 
         display: flex;
         flex-direction: column; 
-        background-color: pink;
         width: 100%;
     }
     
     .catalogue-header-container {
     
-        background-color: red;
+        
         text-align: center;
     }
     
@@ -297,7 +857,6 @@ select {
         flex-direction: row;
         width: 90%;
         justify-content: space-between;
-        background-color: maroon;
         margin: 0 auto;
     }
     /* Product */
@@ -306,7 +865,6 @@ select {
     
         display: flex;
         flex-direction: column;
-        background-color: yellow;
         align-items: center;
     
     }
@@ -330,8 +888,8 @@ select {
     }
     .product-image {
     
-        width: 300px;
-        height: 350px;
+        width: 250px;
+        height: 300px;
     }
     
     .product-shop-button {
@@ -366,6 +924,147 @@ select {
 
     }
 
+    /* Mobile Styles */
+
+/* Iphone 14 Pro Max*/
+
+@media only screen and (max-width: 450px) {
+    /* Your mobile-specific CSS rules here */
+
+    .catalgue-products-container {
+    
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+}
+
+/* Small - Tablet Styles */
+@media only screen and (min-width: 451px) and (max-width: 850px) {
+    /* Your tablet-specific CSS rules here */
+
+    .catalgue-products-container {
+    
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+}
+
+/*  Desktops Styles */
+@media only screen and (min-width: 851px) and (max-width: 1750px) {
+    /* Your tablet-specific CSS rules here */
+    
+    .catalogue-header-container {
+    
+        text-align: center;
+    }
+
+    .catalogue-header-elements p{
+    
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .catalogue-header-elements h1{
+    
+        font-size: 50px;
+        text-align: center;
+    }
+
+
+    .catalgue-products-container {
+    
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .product-form-container{
+    
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    .form-element{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .form-element h3{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 30px;
+        
+    }
+
+    .form-element p{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 20px;
+        
+    }
+
+    .form-element-label {
+
+        padding: 10px 0;
+        font-size: 20px;
+    }
+
+    .form-element select {
+
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .product-shop-button {
+
+        display: flex;
+        width: 150px;
+        height: 40px;
+        background-color: black;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+        border: 1px solid black;
+        text-decoration: none;
+        color: white;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and color */
+        transition: transform 0.1s ease; /* Smooth */
+        border: none;
+
+        font-size: 20px;
+
+    }
+
+
+    
+
+}
+
     /*--------------------------------------------
                     cart
     ---------------------------------------------*/
@@ -377,14 +1076,14 @@ select {
         justify-content: center;
         align-items: center;
         width: 100%;
-        background-color: lightblue;
+        
+
     }
 
     .cart-container {
 
         display: flex;
         flex-direction: column;
-        background-color: antiquewhite;
         width: 75%;
         height: 90%;
         padding: 10% 0;
@@ -406,12 +1105,12 @@ select {
 
     .cart-button-container {
 
-        background-color: aqua;
         width: 100%;
         margin: 0 auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
     }
 
     .cart-button-checkout {
@@ -456,7 +1155,7 @@ select {
 
     .cart-customer-product-container {
 
-        background-color: lightgray;
+        background-color: rgb(237, 237, 237);
         display: flex;
         flex-direction: row;
         width: 90%;
@@ -471,17 +1170,23 @@ select {
 
     .cart-customer-product-name-container {
 
-        background-color: orange;
         padding: 0 2%;
     }
     .button-remove-item {
 
-        background-color: lightgray;
-        color: black;
+        background-color: rgb(0, 0, 0);
+        color: white;
         border: none;
         border-radius: 5px;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and color */
         transition: transform 0.1s ease; /* Smooth */
+    }
+
+    .button-remove-item:hover {
+        
+        background-color: lightgrey;
+        color: black;
+        
     }
 
     .button-remove-item:active {
@@ -502,6 +1207,170 @@ select {
         height: 200px;
     }
 
+    /* Mobile Styles */
+
+/* Iphone 14 Pro Max*/
+
+@media only screen and (max-width: 450px) {
+    /* Your mobile-specific CSS rules here */
+    .cart-header-container {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+        width: 100%;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .cart-header {
+        
+        align-items: center;
+        padding: 0;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .cart-header h1 {
+
+        font-size: 20px;
+    }
+
+    .cart-header img {
+
+        width: 60px;
+        height: 60px;
+    }
+
+    
+    .cart-customer-product-container {
+
+        background-color: lightgray;
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        overflow: scroll ;
+        justify-content: space-evenly;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        align-items: center;
+        
+    }
+
+    
+
+
+}
+
+/* Small - Tablet Styles */
+@media only screen and (min-width: 451px) and (max-width: 850px) {
+
+    .cart-header-container {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+        width: 100%;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .cart-header {
+        
+        align-items: center;
+        padding: 0;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .cart-header h1 {
+
+        font-size: 20px;
+    }
+
+    .cart-header img {
+
+        width: 60px;
+        height: 60px;
+    }
+
+    
+    .cart-customer-product-container {
+
+        background-color: lightgray;
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        overflow: scroll ;
+        justify-content: space-evenly;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        align-items: center;
+        
+    }
+
+
+}
+
+/*  Desktops Styles */
+@media only screen and (min-width: 851px) and (max-width: 1750px) {
+
+    .cart-header-container {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+        width: 100%;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .cart-header {
+        
+        align-items: center;
+        padding: 0;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .cart-header h1 {
+
+        font-size: 20px;
+    }
+
+    .cart-header img {
+
+        width: 150px;
+        height: 150px;
+    }
+
+    
+    .cart-customer-product-container {
+
+        background-color: lightgray;
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        overflow: scroll ;
+        justify-content: space-evenly;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        align-items: center;
+        
+    }
+
+
+}
+
 /*-------------------------------------------
             Checkout
 ----------------------------------------------*/
@@ -519,7 +1388,6 @@ select {
 
     display: flex;
     flex-direction: column;
-    background-color: aqua;
     width: 100%;
     padding: 10% 0;
     justify-content: center;
@@ -531,7 +1399,6 @@ select {
 
     display: flex;
     flex-direction: column;
-    background-color: green;
     width: 80%;
 }
 
@@ -539,7 +1406,6 @@ select {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: blanchedalmond;
     width: 90%;
     align-items: center;
     margin: 0 auto;
@@ -551,7 +1417,6 @@ select {
 
     display: flex;
     flex-direction: row;
-    background-color: blue;
     width: 90%;
     justify-content: space-between;
     margin: 0 auto;
@@ -561,32 +1426,36 @@ select {
 
     display: flex;
     flex-direction: column;
-    background-color: lime;
     width: 50%;
 }
 
 .checkout-body-form-container {
+    
     display: flex;
     flex-direction: row;
-    background-color: peru;
     width: 100%;
+
 }
+
 .checkout-form-element-container {
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 95%;
     margin: 0 auto;
     align-items: center;
-    background-color: lightblue
+    
 }
 
 .checkout-input {
+
     width: 300px;
     height: 30px;
     margin: auto;
     border-radius: 5px;
     border: 1px solid gray;
+
 }
 
 .checkout-select {
@@ -603,7 +1472,6 @@ select {
 
     display: flex;
     justify-content: center;
-    background-color: chartreuse;
     width: 40%;
     margin: auto;
     align-items: center;
@@ -611,9 +1479,9 @@ select {
 
 .checkbox-form-input {
 
-    background-color: chocolate;
     width: 70%;
     font-size: 14px;
+
 }
 
 .checkout-check-box {
@@ -629,7 +1497,6 @@ select {
 
     display: flex;
     flex-direction: column;
-    background-color: brown;
     justify-content: space-between;
     width: 50%;
     
@@ -638,11 +1505,14 @@ select {
 
 
 .checkout-billing-info {
+
+
     display: flex;
     flex-direction: row;
     width: 90%;
     justify-content: space-between;
-    background-color: cadetblue;
+    
+
 }
 
 .billing-total {
@@ -662,10 +1532,11 @@ select {
 
 .checkout-button-container {
 
-    background-color: cornflowerblue;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
 }
 
 .checkout-button-cancel {
@@ -689,6 +1560,127 @@ select {
 
 }
 
+/* Mobile Styles */
+
+/* Iphone promax*/
+
+@media only screen and (max-width: 850px) {
+
+    .checkout-main-container {
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10% 0;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .checkout-container {
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+
+    .checkout-header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        align-items: center;
+        margin: 0 auto;
+        border-bottom: 1px solid black;
+        
+    }
+
+    .cart-header {
+        
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        
+
+    }
+
+    .cart-header h1 {
+
+        font-size: 20px;
+    }
+
+    .cart-header img {
+
+        width: 60px;
+        height: 60px;
+    }
+
+    .checkout-body-form-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .chechout-billing-form-container {
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .checkout-input {
+        width: 250px;
+        height: 30px;
+        margin: auto;
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+
+    /* Checkout - right side */
+
+.checkout-billing-summary-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.checkout-select {
+
+    width: 250px;
+    height: 30px;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid gray;
+
+}
+
+.checkbox-form-label {
+
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin: auto;
+    align-items: center;
+}
+
+.checkbox-form-input {
+
+    background-color: chocolate;
+    width: 50%;
+    font-size: 12px;
+}
+
+
+
+}
+
 /* ----------------------------------------
             Order 
  ------------------------------------------*/
@@ -706,14 +1698,14 @@ select {
     transform: translate(-50%, -50%);
     width: 70%;
     height: 90%;
-    background-color: red;
     z-index: 9999;
  }
 
  .order-container {
 
-    background-color: lightblue;
+    background-color: lightgrey;
     width: 90%;
+    border-radius: 15px;
  }
 
  .order-description-header {
@@ -728,11 +1720,11 @@ select {
 
     display: flex;
     justify-content: center;
-    background-color: #007bff;
+    
  }
  .order-links-container {
 
-    background-color: burlywood;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -742,7 +1734,7 @@ select {
 
  .order-button-container {
 
-    background-color: chartreuse;
+    
     display: flex;
     justify-content: center;
     padding: 4% 0;
@@ -764,7 +1756,7 @@ select {
 
     .customer-order-header-container {
 
-        background-color: pink;
+    
         width: 100%;
         margin: 0 auto;
         display: flex;
@@ -775,7 +1767,7 @@ select {
 
     .customer-order-body-container {
 
-        background-color: purple;
+        
         width: 100%;
         margin: 0 auto;
         display: flex;
@@ -788,7 +1780,7 @@ select {
 
     .customer-order-detail-address-container {
 
-        background-color: lightblue;
+        
         width: 80%;
         margin: 0 auto;
         display: flex;
@@ -817,7 +1809,7 @@ select {
 .footer-container {
     display: flex;
     flex-direction: column;
-    background-color: greenyellow;
+
     /* Adjust other styles as needed */
 }
 
@@ -825,3 +1817,56 @@ select {
     text-align: center;
 }
 
+/*  Desktops Styles */
+@media only screen and (min-width: 851px) and (max-width: 1750px) {
+    /* Your tablet-specific CSS rules here */
+
+    .copyright-container p{
+
+        font-size: 30px;
+
+    }
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------------
+                                        Animations 
+--------------------------------------------------------------------------------------------*/
+
+/* Slide from top*/ /*
+
+.slide-from-top {
+
+    animation: slideInFromTop 3s ease-in-out;
+
+
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+} */
+
+
+/* Slide from left */ /*
+.slide-from-left {
+    animation: slideInFromLeft 1.5s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+*/
+ 

@@ -10,18 +10,44 @@ import CollectionL from '../assets/collection-left.png' // summer/winter collect
 import CollectionC from '../assets/collection-center.png' // summer/winter collection images  
 import CollectionR from '../assets/collection-right.png' // summer/winter collection images 
 
+import { useEffect,useState } from "react";
 
 
 
-class Home extends React.Component {
 
-    render() {
+const Home = () => {
+
+    const [isSlide, setIsSlide] = useState(false);
+
+    useEffect(() => {
+
+        const handleScroll = () => {
+            const heroShopContainer = document.querySelector('.hero-image-shop-container');
+            if (heroShopContainer) {
+                const bounding = heroShopContainer.getBoundingClientRect();
+                if (bounding.top <= window.innerHeight && bounding.bottom >= 0) {
+                    setIsSlide(true);
+                } else {
+                    setIsSlide(false);
+                }
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+
+    }, []);
+
+    
 
         return(
 
             <div className="home-page-container">
 
-                <section className="hero-image-section">
+                <section className="hero-image-section slide-from-left">
 
                     {/* Hero section of home page */}
 
@@ -33,7 +59,11 @@ class Home extends React.Component {
                             
                             <p>Delay is Not Denial</p>
 
-                            <Link className="shop-now-button" to='shop'>Shop Now</Link>
+                            <Link className="shop-now-button" to='shop'>
+
+                                Shop Now
+
+                            </Link>
 
                         </div>
                         
@@ -96,14 +126,14 @@ class Home extends React.Component {
                             </div>
 
                             <div>
-                                <p>Subcribe for all the latest clun unbranded specals and latest updates. </p>
+                                <p>Subcribe for all the latest club unbranded specials and latest updates. </p>
                             </div>
                     
                             <form>
 
-                                <label>Email address : </label>
-                                <input placeholder="Enter your emal address"/>
-                                <button>Join</button>
+                                <label>Email address  </label>
+                                <input className='form-email-input' placeholder="Enter your emal address"/>
+                                <button className="form-button-join">Join</button>
 
                             </form>
 
@@ -116,8 +146,6 @@ class Home extends React.Component {
 
             </div>
         )
-    }
-
 }
 
 export default Home
