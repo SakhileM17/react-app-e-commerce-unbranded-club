@@ -1,7 +1,7 @@
 
 # react-app-e-commerce-unbranded-club
 
-This repo contains a project react app e-commerce app for unbranded-club. 
+This repo contains a project react app e-commerce simulation app for unbranded-club. 
 
 <img src="https://github.com/SakhileM17/react-app-e-commerce-unbranded-club/blob/main/src/assets/screenshots/Landing_Page.png?raw=true">
 
