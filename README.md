@@ -1,9 +1,32 @@
 
 # react-app-e-commerce-unbranded-club
 
-Project is currently in progress
+This repo contains a project react app e-commerce simulation app for unbranded-club. 
 
-This repo contains a project react app e-commerce app for unbranded-club 
+<img src="https://github.com/SakhileM17/react-app-e-commerce-unbranded-club/blob/main/src/assets/screenshots/Landing_Page.png?raw=true">
+
+# Features
+
+The e-commerce website performs the following functions : 
+
+- Add Items to Cart.
+- Manage Cart.
+- Checkout.
+- Order Confirmation
+
+<img src="https://github.com/SakhileM17/react-app-e-commerce-unbranded-club/blob/main/src/assets/screenshots/Collection_clothes.png?raw=true">
+
+# TechStack 
+
+This e-commerce app simulation is not a fullstack app , only consists of the following tech stack: 
+
+- Langauges : JavaScript, HTML, CSS
+- Frameworks : ReactJS
+- State Management : Redux
+
+- <img src="https://github.com/SakhileM17/react-app-e-commerce-unbranded-club/blob/main/src/assets/screenshots/Cart_clothes.png?raw=true">
+
+
 =======
 # Getting Started with Create React App
 
