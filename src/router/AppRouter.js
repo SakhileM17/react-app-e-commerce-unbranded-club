@@ -17,7 +17,7 @@ const AppRouter = () => {
 
     return (
 
-        <BrowserRouter>
+        <BrowserRouter basename="/react-app-e-commerce-unbranded-club">
         
             <div className='application-container'>
                 
