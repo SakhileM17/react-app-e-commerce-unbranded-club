@@ -1,63 +1,60 @@
-import React from "react"
+import React, { Suspense } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Loading from '../components/Loading';
 
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-
-import Header from "../components/Header"
-import Footer from "../components/Footer"
-
-import Home from "../components/Home"
-import Shop from "../components/Shop"
-import Cart from "../components/Cart"
-import CustomerOrder from "../components/CustomerOrders"
-
-import Checkout from "../components/Checkout"
-
+const Header = React.lazy(() => import('../components/Header'));
+const Footer = React.lazy(() => import('../components/Footer'));
+const Home = React.lazy(() => import('../components/Home'));
+const Shop = React.lazy(() => import('../components/Shop'));
+const Cart = React.lazy(() => import('../components/Cart'));
+const CustomerOrder = React.lazy(() => import('../components/CustomerOrders'));
+const Checkout = React.lazy(() => import('../components/Checkout'));
 
 const AppRouter = () => {
 
-    return (
 
-        <BrowserRouter basename="/react-app-e-commerce-unbranded-club">
-        
-            <div className='application-container'>
-                
-                <div className='app-header-container'>
+  return (
 
-                    <Header />
+    <BrowserRouter basename="/react-app-e-commerce-unbranded-club">
 
-                </div>
-                
-                <div className='application-pages-containers'>
-  
-                    <Routes>
-              
-                        <Route path="/" element={<Home/>}/>
-              
-                        <Route path="/shop" element={<Shop/>} />
+      <div className="application-container">
 
-                        <Route path="/cart" element={<Cart/>} />
+        <div className="app-header-container">
+          
+            <Header />
+          
+        </div>
 
-                        <Route path="/checkout" element={<Checkout/>} />
+        <div className="application-pages-containers">
 
-                        <Route path='/latestorder'element={<CustomerOrder />}/>
+          <Suspense fallback={<Loading />}>
 
-                    
-                    </Routes>
+            <Routes>
 
-                </div>
+              <Route path="/" element={<Home />} />
+              <Route path="/shop" element={<Shop />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/checkout" element={<Checkout />} />
+              <Route path="/latestorder" element={<CustomerOrder />} />
 
-                <div className="app-footer-container">
+            </Routes>
+            
+          </Suspense>
 
-                    <Footer />  
+        </div>
 
-                </div>
-        
-            </div>
+        <div className="app-footer-container">
 
-      </BrowserRouter>
+          
+            <Footer />
+          
 
-        
-    )
-} 
+        </div>
 
-export default AppRouter
+      </div>
+
+    </BrowserRouter>
+  );
+};
+
+export default AppRouter;
