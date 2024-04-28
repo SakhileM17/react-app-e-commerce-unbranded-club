@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfullstack_e_commerce_app=self.webpackChunkfullstack_e_commerce_app||[]).push([[834],{834:(e,c,a)=>{a.r(c),a.d(c,{Footer:()=>l,default:()=>r});a(43);var s=a(579);const l=()=>(0,s.jsx)("div",{className:"footer-container",children:(0,s.jsx)("div",{className:"copyright-container",children:(0,s.jsx)("p",{children:" Unbranded Club website designed by Sakhile Mkhalele "})})}),r=l}}]);
+//# sourceMappingURL=834.4417cd10.chunk.js.map
