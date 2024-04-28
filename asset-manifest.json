@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/react-app-e-commerce-unbranded-club/static/css/main.c54e69bc.css",
-    "main.js": "/react-app-e-commerce-unbranded-club/static/js/main.b8f01d08.js",
+    "main.js": "/react-app-e-commerce-unbranded-club/static/js/main.be0fcf6d.js",
     "static/js/47.8fdf30d5.chunk.js": "/react-app-e-commerce-unbranded-club/static/js/47.8fdf30d5.chunk.js",
     "static/js/834.4417cd10.chunk.js": "/react-app-e-commerce-unbranded-club/static/js/834.4417cd10.chunk.js",
-    "static/css/867.4b99a65a.chunk.css": "/react-app-e-commerce-unbranded-club/static/css/867.4b99a65a.chunk.css",
+    "static/css/867.653aa3ec.chunk.css": "/react-app-e-commerce-unbranded-club/static/css/867.653aa3ec.chunk.css",
     "static/js/867.2d7d58bb.chunk.js": "/react-app-e-commerce-unbranded-club/static/js/867.2d7d58bb.chunk.js",
-    "static/css/761.4b99a65a.chunk.css": "/react-app-e-commerce-unbranded-club/static/css/761.4b99a65a.chunk.css",
+    "static/css/761.653aa3ec.chunk.css": "/react-app-e-commerce-unbranded-club/static/css/761.653aa3ec.chunk.css",
     "static/js/761.dd2736a4.chunk.js": "/react-app-e-commerce-unbranded-club/static/js/761.dd2736a4.chunk.js",
     "static/js/739.2b0ab5b6.chunk.js": "/react-app-e-commerce-unbranded-club/static/js/739.2b0ab5b6.chunk.js",
     "static/js/60.ff2beafc.chunk.js": "/react-app-e-commerce-unbranded-club/static/js/60.ff2beafc.chunk.js",
@@ -22,12 +22,12 @@
     "static/media/products-tracksuit.png": "/react-app-e-commerce-unbranded-club/static/media/products-tracksuit.a4d71643cc6a4f6fa0fa.png",
     "index.html": "/react-app-e-commerce-unbranded-club/index.html",
     "main.c54e69bc.css.map": "/react-app-e-commerce-unbranded-club/static/css/main.c54e69bc.css.map",
-    "main.b8f01d08.js.map": "/react-app-e-commerce-unbranded-club/static/js/main.b8f01d08.js.map",
+    "main.be0fcf6d.js.map": "/react-app-e-commerce-unbranded-club/static/js/main.be0fcf6d.js.map",
     "47.8fdf30d5.chunk.js.map": "/react-app-e-commerce-unbranded-club/static/js/47.8fdf30d5.chunk.js.map",
     "834.4417cd10.chunk.js.map": "/react-app-e-commerce-unbranded-club/static/js/834.4417cd10.chunk.js.map",
-    "867.4b99a65a.chunk.css.map": "/react-app-e-commerce-unbranded-club/static/css/867.4b99a65a.chunk.css.map",
+    "867.653aa3ec.chunk.css.map": "/react-app-e-commerce-unbranded-club/static/css/867.653aa3ec.chunk.css.map",
     "867.2d7d58bb.chunk.js.map": "/react-app-e-commerce-unbranded-club/static/js/867.2d7d58bb.chunk.js.map",
-    "761.4b99a65a.chunk.css.map": "/react-app-e-commerce-unbranded-club/static/css/761.4b99a65a.chunk.css.map",
+    "761.653aa3ec.chunk.css.map": "/react-app-e-commerce-unbranded-club/static/css/761.653aa3ec.chunk.css.map",
     "761.dd2736a4.chunk.js.map": "/react-app-e-commerce-unbranded-club/static/js/761.dd2736a4.chunk.js.map",
     "739.2b0ab5b6.chunk.js.map": "/react-app-e-commerce-unbranded-club/static/js/739.2b0ab5b6.chunk.js.map",
     "60.ff2beafc.chunk.js.map": "/react-app-e-commerce-unbranded-club/static/js/60.ff2beafc.chunk.js.map",
@@ -37,6 +37,6 @@
   },
   "entrypoints": [
     "static/css/main.c54e69bc.css",
-    "static/js/main.b8f01d08.js"
+    "static/js/main.be0fcf6d.js"
   ]
 }
