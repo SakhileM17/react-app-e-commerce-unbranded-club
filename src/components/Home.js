@@ -79,13 +79,13 @@ const Home = () => {
 
                         <div className="collection-image-container">
                             
-                            <img className="collection-image" src={CollectionL} alt="unbranded-club-collection"/>
+                            <img className="collection-image collection-left" src={CollectionL} alt="unbranded-club-collection"/>
 
                         </div>
 
                         <div className="collection-image-container">
                             
-                            <img className="collection-image" src={CollectionC} alt="unbranded-club-collection"/>
+                            <img className="collection-image collection-center" src={CollectionC} alt="unbranded-club-collection"/>
 
                             <div className="collection-shop-container">
                                 
@@ -97,7 +97,7 @@ const Home = () => {
 
                         </div>
 
-                        <div className="collection-image-container"> 
+                        <div className="collection-image-container collection-right"> 
                         
                             <img className="collection-image" src={CollectionR} alt="unbranded-club-collection"/>
 

@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 
 import { useState } from "react";
 
+import { useLocation } from "react-router-dom";
+
 
 
 import UnbrandedLogo from "../assets/Logo-UnbrandedClub.png"
@@ -13,6 +15,8 @@ const Header = () => {
 
     // State to manage the visibility of the mobile menu
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const location = useLocation()
 
     // Function to toggle the mobile menu
     const toggleMenu = () => {
@@ -45,7 +49,10 @@ const Header = () => {
 
             {/* Mobile Nav Menu */}
             {isMenuOpen && (
+
                 <div className="mobile-nav-menu">
+
+
                     <Link className="nav-menu-links" to="" onClick={closeMenu}>
                         Home
                     </Link>
@@ -56,23 +63,26 @@ const Header = () => {
                         Cart
                     </Link>
                 </div>
+                
             )}
 
             <div className="nav-menu-container">
 
                 <div className="nav-menu-links-container">
-                    <Link className="nav-menu-links" to="">Home</Link>
-                </div>
-
-                <div className="nav-menu-links-container">
-
-                    <Link className="nav-menu-links" to="shop">Shop</Link>
+                    
+                    <Link className={`nav-menu-links ${ location.pathname === "/" ? "active" : ""}`} to=""> Home</Link>
 
                 </div>
 
                 <div className="nav-menu-links-container">
 
-                    <Link className="nav-menu-links" to='cart' > Cart </Link>
+                    <Link className={`nav-menu-links ${ location.pathname === "/shop" ? "active" : ""}`} to="shop">Shop</Link>
+
+                </div>
+
+                <div className="nav-menu-links-container">
+
+                    <Link className={`nav-menu-links ${ location.pathname === "/cart" ? "active" : ""}`} to='cart' > Cart </Link>
                     
                 </div>
 

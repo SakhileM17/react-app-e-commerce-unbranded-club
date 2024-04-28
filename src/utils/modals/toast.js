@@ -3,6 +3,8 @@ import React from "react";
 //image
 import toasterTick from '../../assets/toastertick.png' // summer/winter collection images
 
+/* Notification toaster that apears everytime a user adds an item to a cart */
+
 const Toast = ({message, onClose}) => {
 
     return (
@@ -10,7 +12,9 @@ const Toast = ({message, onClose}) => {
         <div className="toast">
 
             <div className="toast-button-container">
+
                 <img  className='toast-tick-img' src={toasterTick} alt="tick black"/>
+
             </div>
 
             <div className="toast-button-container">
@@ -18,7 +22,7 @@ const Toast = ({message, onClose}) => {
             </div>
 
             <div className="toast-button-container">
-                <button className="toast-close-button" onClick={onClose}>Cart</button>
+                <button className="toast-close-button" onClick={onClose}>View</button>
             </div>
 
         </div>

@@ -78,6 +78,8 @@ const Cart = ({ cartItems , removeFromCart, clearCart, selectQty, totalPrice, ad
           </div>
 
         </div>
+
+        
         
         <div className='cart-production-description'>
 
@@ -102,97 +104,44 @@ const Cart = ({ cartItems , removeFromCart, clearCart, selectQty, totalPrice, ad
 
                       </div>
 
-                      <div className='cart-customer-product-name-container'>
-
-                        <div>
-
-                          <strong><p>Product ID </p></strong>
-
-                        </div>
-
-                        <div>
-
-                          <p>{item.id}</p>
-
-                        </div>
-
-                      </div>
                       
                       <div className='cart-customer-product-name-container'>
 
                         <div>
 
-                          <strong><p>Product Name </p></strong>
+                          <p><strong>Unbranded Jogger {item.name}</strong></p>
 
                         </div>
 
                         <div>
-                          <p>{item.name}</p>
-                        </div>
 
-                      
-                      </div>
-
-                      <div className='cart-customer-product-name-container'>
-
-                        <div>
-
-                          <strong><p>Product size </p></strong>
+                          <p>Price : {moneyFormat(item.price)}</p>
 
                         </div>
 
                         <div>
-                          <p>{item.size}</p>
+
+                          <p>Size : {item.size} - Qty :  
+
+                            <select value={item.qty} onChange={(event) => handleQtyChange(item.id, event)}>
+                              {[...Array(10)].map((_, i) => (
+                                <option key={i} value={i + 1}>{i + 1}</option>
+                              ))}
+                            </select>
+                          
+                          </p>
+
                         </div>
-
-                      </div>
-
-                      <div className='cart-customer-product-name-container'>
 
                         <div>
 
-                          <strong><p>Product Price </p></strong>
+                          <p> <strong>Total Price : {moneyFormat(item.price * item.qty)}</strong></p>
 
                         </div>
-
-                        <div>
-                          <p>{item.price}</p>
-                        </div>
-
-                      </div>
-
-                      <div className='cart-customer-product-name-container'>
 
                         
-                        <div>
-                          
-                          <p> <strong><p>Qty :</p></strong>
-                          
-  <select value={item.qty} onChange={(event) => handleQtyChange(item.id, event)}>
-    {[...Array(10)].map((_, i) => (
-      <option key={i} value={i + 1}>{i + 1}</option>
-    ))}
-  </select>
 
-                          </p>
                       
-
-                        </div>
-
-                      </div>
-
-                      <div className='cart-customer-product-name-container'> 
-
-                        <div>
-
-                          <strong><p>Total Price </p></strong>
-
-                        </div>
-
-                        <div>
-                          <p>{moneyFormat(item.price * item.qty)}</p>
-                        </div>
-
                       </div>
 
                       <div className='cart-customer-product-name-container'>
@@ -235,9 +184,11 @@ const Cart = ({ cartItems , removeFromCart, clearCart, selectQty, totalPrice, ad
             ) : (
 
               <div>
+
                   <p>Your cart is empty</p>
 
                   <button className='continue-shopping-button' onClick={navigateToShop}>Continuee Shopping</button>
+
               </div>
             )}
           </div>

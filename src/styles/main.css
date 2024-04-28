@@ -52,6 +52,9 @@ select {
 
     padding:  0;
 
+    /* Animation*/
+    animation: slideInFromTop 1s ease-in forwards; /* Use desired duration */
+
 }
 
 .logo-container {
@@ -65,6 +68,9 @@ select {
 .header-logo {
     padding: 0 5%;
     width: 50%;
+
+    /* Animation*/
+    animation: slideInLogo 1.5s ease-in forwards; /* Use desired duration */
 }
 
 /* Navi Menu */
@@ -75,6 +81,9 @@ select {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
+    /* Animation*/
+    animation: slideInMenu 1.5s ease-in forwards; /* Use desired duration */
 
 }
 
@@ -98,6 +107,13 @@ select {
     color: white;
 
 }
+
+/* Add this CSS to style the active link as grey */
+.nav-menu-links.active {
+    color: white;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+  }
 
 .nav-menu-links:hover {
     color: grey;
@@ -143,7 +159,17 @@ select {
         background-color: black;
     
         padding:  0;
-    
+
+        /* Animation*/
+        animation: none
+
+        
+
+    }
+
+    .header-logo {
+
+        animation: none;
     }
 
     .mobile-nav-menu {
@@ -152,14 +178,11 @@ select {
         justify-content: space-between;
         left: 55%;
         height: 30vh;
-
-    
-    flex-direction: column;
-    background-color: lightgray;
-    position: absolute;
-    top: 100%; /* Adjust according to your header height */
-    right: 0;
-    
+        flex-direction: column;
+        background-color: lightgray;
+        position: absolute;
+        top: 100%; /* Adjust according to your header height */
+        right: 0;
 
         
     }
@@ -177,6 +200,7 @@ select {
         text-decoration: none;
         font-size: 20px;
         color: black;
+        
     }
 
     .hamburger-icon {
@@ -273,6 +297,8 @@ select {
 
 .home-page-container {
     width: 100%;
+
+    
 }
 
 /* Hero Section */
@@ -283,6 +309,9 @@ select {
 
 .hero-image {
     width: 100%;
+
+    /* Animation*/
+    animation: slideInLogo 1.5s ease-in forwards; /* Use desired duration */
 
 }
 
@@ -305,6 +334,7 @@ select {
     cursor: pointer;
     width: 500px;
     height: 300px;
+
     
 }
 
@@ -352,11 +382,15 @@ select {
         width: 200px;
         height: 100px;
 
+        animation: none;
+
     }
 
     .hero-image-shop-container p{
 
         font-size: 20px;
+
+        animation: none;
     
     }
     
@@ -386,11 +420,15 @@ select {
         width: 400px;
         height: 200px;
 
+        animation: none;
+
     }
 
     .hero-image-shop-container p{
 
         font-size: 40px;
+
+        animation: none;
     
     }
     
@@ -508,9 +546,12 @@ select {
 
 .collection-image {
     width: 99%;
-    height: 600px;
-
+    height: 900px;
 }
+
+
+
+
 
 .collection-image-container {
     position: relative; /* Ensure that child absolute positioning is relative to this container */
@@ -538,7 +579,8 @@ select {
 }
 
 .collection-shop-container p {
-    font-size: 20px;
+
+    font-size: 30px;
 }
 
 
@@ -569,6 +611,8 @@ select {
     
     }
 
+    
+
     .collection-shop-container {
 
         display: none;
@@ -595,6 +639,7 @@ select {
         display: none;
 
     }
+
     
 
 
@@ -1176,7 +1221,7 @@ select {
 
     .cart-customer-product-container {
 
-        background-color: rgb(237, 237, 237);
+        background-color: rgb(247, 247, 247);
         display: flex;
         flex-direction: row;
         width: 90%;
@@ -1198,6 +1243,7 @@ select {
         background-color: rgb(0, 0, 0);
         color: white;
         border: none;
+        height: 50px;
         border-radius: 5px;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, and color */
         transition: transform 0.1s ease; /* Smooth */
@@ -1220,13 +1266,19 @@ select {
         border-top: 1px solid black;
     }
 
-
+    
 
     .cart-product-image {
 
         width: 200px;
         height: 200px;
     }
+
+    .cart-product-container ul {
+        list-style-type: none; /* Remove bullet points */
+        padding: 0; /* Remove default padding */
+        margin: 0; /* Remove default margin */
+      }
 
     /* Mobile Styles */
 
@@ -1267,20 +1319,34 @@ select {
         height: 60px;
     }
 
+    .cart-product-container {
+
+        width: 100%;
+    }
+
     
     .cart-customer-product-container {
 
-        background-color: lightgray;
+        background-color: rgb(247, 247, 247);
         display: flex;
         flex-direction: row;
-        width: 90%;
+        width: 100%;
         overflow: scroll ;
         justify-content: space-evenly;
         border-top: 1px solid white;
         border-bottom: 1px solid white;
         align-items: center;
+        margin: 0 auto;
         
     }
+
+    .cart-product-image {
+
+        width: 100px;
+        height: 100px;
+    }
+
+    
 
     
 
@@ -1716,7 +1782,6 @@ select {
 
 .checkbox-form-input {
 
-    background-color: chocolate;
     width: 50%;
     font-size: 12px;
 }
@@ -1914,36 +1979,48 @@ select {
 
 /* Slide from top*/ /*
 
-.slide-from-top {
+/* Add animation keyframes */
+@keyframes fadeIn {
+    from {
+      
+        opacity: 0%;
+    }
+    to {
 
-    animation: slideInFromTop 3s ease-in-out;
+        opacity: 100%;
+    }
+  }
 
-
-}
-
+/* Add animation keyframes */
 @keyframes slideInFromTop {
-    0% {
-        transform: translateY(-100%);
+    from {
+      transform: translateY(-100%);
     }
-    100% {
-        transform: translateY(0);
+    to {
+      transform: translateY(0);
     }
-} */
+  }
 
+/* Keyframes for sliding in the logo from the left */
+@keyframes slideInLogo {
 
-/* Slide from left */ /*
-.slide-from-left {
-    animation: slideInFromLeft 1.5s ease-in-out;
-}
-
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
+    from {
+      transform: translateX(-100%);
     }
-    100% {
-        transform: translateX(0);
+    to {
+      transform: translateX(0);
     }
-}
 
-*/
- 
+  }
+
+/* Keyframes for sliding in the navigation menu from the right */
+@keyframes slideInMenu {
+
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+
+  }
