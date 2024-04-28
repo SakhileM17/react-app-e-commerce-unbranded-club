@@ -22,10 +22,6 @@ import CustomProductModal from "../utils/modals/productmodal";
 import Toast from "../utils/modals/toast";
 
 
-
-
-
-
 const Collection = ({addToCart}) => {
 
     // State to manage selected size for each product
@@ -140,7 +136,7 @@ const Collection = ({addToCart}) => {
                         <form onSubmit={(event) => handleOnSubmit(event, index, product)} className="product-form-container"> {/* Pass index and product */}
                             {/* Product Image */}
                             <div className="form-element">
-                                <img src={product.img} alt="" className="product-image" onClick={() => handleImageOnClick(product)} /> {/* Pass a function reference */}
+                                <img src={product.img} alt="" className="collection-product-image" onClick={() => handleImageOnClick(product)} /> {/* Pass a function reference */}
                             </div>
                             {/* Brand Name */}
                             <div className="form-element">
