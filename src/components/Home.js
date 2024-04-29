@@ -83,7 +83,7 @@ const Home = () => {
 
                         </div>
 
-                        <div className="collection-image-container">
+                        <div className="collection-image-container collection-center-container">
                             
                             <img className="collection-image collection-center" src={CollectionC} alt="unbranded-club-collection"/>
 

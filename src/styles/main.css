@@ -629,7 +629,11 @@ select {
         width: 250px;
         height: 250px;
     }
-    
+
+    .collection-center-container {
+
+        display: none;
+    }
     
 
 }
