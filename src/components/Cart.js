@@ -109,13 +109,13 @@ const Cart = ({ cartItems , removeFromCart, clearCart, selectQty, totalPrice, ad
 
                         <div>
 
-                          <p><strong>Unbranded Jogger {item.name}</strong></p>
+                          <p><strong> {item.name}</strong></p>
 
                         </div>
 
                         <div>
 
-                          <p>Price : {moneyFormat(item.price)}</p>
+                          <p>Item Price : {moneyFormat(item.price)}</p>
 
                         </div>
 

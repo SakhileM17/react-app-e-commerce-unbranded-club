@@ -40,6 +40,7 @@ const Collection = ({addToCart}) => {
 
     useEffect(() => {
         let timer;
+        
         if (showToast) {
             timer = setTimeout(() => {
                 setShowToast(false);
